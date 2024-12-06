@@ -1,11 +1,13 @@
 /* Ajouter des images et styles pour les nouveaux parallèles */
 .parallelism img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 300px; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+  object-fit: cover; /* Cela permet de garder les proportions des images tout en les ajustant à la taille spécifiée */
   margin-bottom: 15px;
   border-radius: 8px;
 }
 
+/* Les autres styles restent inchangés */
 .parallelism h3 {
   font-size: 1.5em;
   color: #006994;
@@ -26,12 +28,11 @@ header {
   min-height: 300px; /* Hauteur minimale pour garantir une présentation soignée */
 }
 
-
-
 header h1 {
   font-size: 2.5em;
   margin: 0;
 }
+
 .parallelism p {
   text-align: justify;
   margin: 10px 0;
