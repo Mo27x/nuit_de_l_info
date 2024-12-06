@@ -6,146 +6,153 @@
     <title>Symbiose entre le Corps Humain et l’Océan</title>
     <link href="./css/styles.css" rel="stylesheet" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <script src="./main.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <!-- Titre et introduction -->
-      <header>
-        <img src="images/logo.png" alt="Logo" id="footer-logo" />
-        <h1>Symbiose entre le Corps Humain et l’Océan</h1>
-        <h2>Une Harmonie Naturelle</h2>
-      </header>
-      <section>
-        <p>
-          Bienvenue dans un voyage captivant où le corps humain et l’océan se
-          révèlent dans toute leur splendeur. Ces deux entités, bien
-          qu'apparemment distinctes, partagent des mécanismes et des fonctions
-          étonnamment similaires, illustrant à quel point la nature est
-          interconnectée. Plongeons dans ces parallèles fascinants.
-        </p>
-      </section>
+    <!-- Titre et introduction -->
+    <header>
+      <img src="images/logo.png" alt="Logo" id="footer-logo" />
+      <h1>Symbiose entre le Corps Humain et l’Océan</h1>
+      <h2>Une Harmonie Naturelle</h2>
+    </header>
+    <section>
+      <p>
+        Bienvenue dans un voyage captivant où le corps humain et l’océan se
+        révèlent dans toute leur splendeur. Ces deux entités, bien
+        qu'apparemment distinctes, partagent des mécanismes et des fonctions
+        étonnamment similaires, illustrant à quel point la nature est
+        interconnectée. Plongeons dans ces parallèles fascinants.
+      </p>
+    </section>
 
-        <div class="row">
-          <div class="col-md-12">
-            <div class="row">
-          <div class="col-md-6" align="center">
-            <h3>Corps Humain</h3>
-            <div class="row">
-              <div class="col-md-4">
-            <div class="image">
-                <img
-              src="images/human-skeleton.png"
-              alt="Illustration du squelette humain"
-            />
-              <p>
-                Le squelette humain offre un support, une protection et une
-              structure qui permettent le mouvement et la stabilité.
-            </p>
+    <main>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-6" align="center">
+              <h3>Corps Humain</h3>
+              <div class="row">
+                <div class="col-md-4" id="skeleton" onclick="switch_skeleton()">
+                  <div class="image">
+                    <img
+                      src="images/human-skeleton.png"
+                      alt="Illustration du squelette humain"
+                    />
+                    <p>
+                      Le squelette humain offre un support, une protection et
+                      une structure qui permettent le mouvement et la stabilité.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-4" id="toxins" onclick="switch_toxins()">
+                  <div class="image">
+                    <img
+                      src="images/toxins-body.png"
+                      alt="Illustration des toxines dans le corps humain"
+                    />
+                    <p>
+                      Les toxines dans le corps humain, qu’elles proviennent
+                      d’une alimentation déséquilibrée ou de l’environnement,
+                      peuvent perturber les fonctions vitales et provoquer des
+                      maladies.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="col-md-4"
+                  id="nervous_system"
+                  onclick="switch_nervous_system()"
+                >
+                  <div class="image">
+                    <img
+                      src="images/nervous-system.png"
+                      alt="Illustration du système nerveux humain"
+                    />
+
+                    <p>
+                      Le système nerveux humain transmet des signaux électriques
+                      entre le cerveau et les différentes parties du corps,
+                      orchestrant nos mouvements, nos pensées et nos réflexes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" align="center">
+              <h3>Océan</h3>
+              <div class="card" id="coral-reef">
+                <h5 class="card-header">Squellette</h5>
+                <div class="card-body">
+                  <img
+                    src="images/coral-reef.png"
+                    alt="Illustration des récifs coralliens"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p>
+                    Dans l’océan, les récifs coralliens jouent un rôle
+                    similaire. Véritables "squelettes" des écosystèmes marins,
+                    ils abritent une biodiversité exceptionnelle et protègent
+                    les côtes contre l’érosion.
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="whale-migration">
+                <h5 class="card-header">Squellette</h5>
+                <div class="card-body">
+                  <img
+                    src="images/whale-migration.png"
+                    alt="Illustration des migrations des baleines"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p>
+                    Dans l’océan, les écosystèmes marins communiquent également.
+                    Par exemple, les migrations des baleines transportent des
+                    nutriments vitaux qui fertilisent les eaux et soutiennent
+                    d'autres formes de vie marine.
+                  </p>
+                </div>
+              </div>
+              <div class="card" id="ocean-pollution">
+                <h5 class="card-header">Squellette</h5>
+                <div class="card-body">
+                  <img
+                    src="images/ocean-pollution.png"
+                    alt="Illustration de la pollution marine"
+                  />
+                </div>
+                <div class="card-footer">
+                  <p>
+                    De même, les océans sont confrontés à une accumulation de
+                    déchets plastiques, de produits chimiques et de pollutions
+                    diverses, mettant en péril la vie marine et, par ricochet,
+                    la nôtre.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-              <div class="col-md-4">
-            <div class="image">
-            <img
-            src="images/toxins-body.png"
-            alt="Illustration des toxines dans le corps humain"
-          />
-          <p>
-            Les toxines dans le corps humain, qu’elles proviennent d’une
-            alimentation déséquilibrée ou de l’environnement, peuvent
-            perturber les fonctions vitales et provoquer des maladies.
-          </p>
-      </div>
-    </div>
-
-          <div class="col-md-4">
-          <div class="image">
-            <img
-          src="images/nervous-system.png"
-          alt="Illustration du système nerveux humain"
-        />
-
-        <p>
-          Le système nerveux humain transmet des signaux électriques entre
-          le cerveau et les différentes parties du corps, orchestrant nos
-          mouvements, nos pensées et nos réflexes.
-        </p> </div>
-      </div>
-      </div>
-    </div>
-
-          <div class="col-md-6" align="center">
-            <h3>Océan</h3>
-            <!-- <div class="card"> 
-              <h5 class="card-header">
-                Squellette
-              </h5>
-              <div class="card-body"><img
-              src="images/coral-reef.png"
-              alt="Illustration des récifs coralliens"
-            /></div>
-            <div class="card-footer">
-            <p>
-              Dans l’océan, les récifs coralliens jouent un rôle similaire.
-              Véritables "squelettes" des écosystèmes marins, ils abritent une
-              biodiversité exceptionnelle et protègent les côtes contre
-              l’érosion.
-            </p> </div>
-          </div>
-            <div class="card">
-              <h5 class="card-header">
-                Squellette
-              </h5>
-              <div class="card-body"><img
-              src="images/whale-migration.png"
-              alt="Illustration des migrations des baleines"
-            /></div>
-            <div class="card-footer">
-            <p>
-              Dans l’océan, les écosystèmes marins communiquent également. Par
-              exemple, les migrations des baleines transportent des nutriments
-              vitaux qui fertilisent les eaux et soutiennent d'autres formes de
-              vie marine.
-            </p> </div>
-          </div>
-            <div class="card">
-              <h5 class="card-header">
-                Squellette
-              </h5>
-              <div class="card-body"><img
-              src="images/ocean-pollution.png"
-              alt="Illustration de la pollution marine"
-            /></div>
-            <div class="card-footer">
-            <p>
-              De même, les océans sont confrontés à une accumulation de déchets
-              plastiques, de produits chimiques et de pollutions diverses,
-              mettant en péril la vie marine et, par ricochet, la nôtre.
-            </p> </div>
-          </div>-->
-
-          </div>
         </div>
+      </div>
+    </main>
 
-            
-          </div>
-        </div>
-    </div>
-
-      <!-- Conclusion -->
-      <section>
-        <h3>Une Interconnexion Essentielle</h3>
-        <p>
-          Le corps humain et l’océan ne sont pas juste des entités séparées ;
-          ils sont des miroirs l’un de l’autre, révélant des processus
-          similaires qui témoignent de l’harmonie de la nature. Protéger l’un,
-          c’est inévitablement protéger l’autre.
-        </p>
-        <p>
-          <strong>Plongez plus profondément :</strong> Explorez chaque parallèle
-          sur ce site et découvrez comment, ensemble, nous pouvons agir pour
-          préserver cette symbiose vitale.
-        </p>
-      </section>
-    </div>
+    <!-- Conclusion -->
+    <section>
+      <h3>Une Interconnexion Essentielle</h3>
+      <p>
+        Le corps humain et l’océan ne sont pas juste des entités séparées ; ils
+        sont des miroirs l’un de l’autre, révélant des processus similaires qui
+        témoignent de l’harmonie de la nature. Protéger l’un, c’est
+        inévitablement protéger l’autre.
+      </p>
+      <p>
+        <strong>Plongez plus profondément :</strong> Explorez chaque parallèle
+        sur ce site et découvrez comment, ensemble, nous pouvons agir pour
+        préserver cette symbiose vitale.
+      </p>
+    </section>
   </body>
 </html>
